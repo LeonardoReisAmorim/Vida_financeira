@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Vida financeira</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="./script/script.js"></script>
+        <link rel="stylesheet" href="./style/style.css">
+      </head>
+<body>
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1>Controle sua vida financeira</h1>
+            <h3>Método 50/30/20</h3>
+        </div>
+
+        <form>
+            <div class="form-group">
+              <label for="salario">Meu salário é: </label>
+              <input type="text" class="form-control" id="salario" placeholder="Digite o seu salario com '.', exemplo 1000.00" name="salario">
+            </div>
+            <div class="button">
+                <button type="button" class="btn btn-primary" id="button" onclick="enviar()">Enviar</button>
+            </div>
+            
+        </form>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">Gastos necessarios (50%)</div>
+            <div class="panel-body" id="gastos_necessarios">⠀</div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">Gastos pessoais e lazer (30%)</div>
+            <div class="panel-body" id="gastos_pessoais_e_lazer">⠀</div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">Reserva (20%)</div>
+            <div class="panel-body" id="reserva">⠀</div>
+          </div>
+    </div>
+
+</body>
+</html>
