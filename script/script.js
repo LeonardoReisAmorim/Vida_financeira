@@ -12,13 +12,12 @@ function enviar(){
         if(isNaN(gastos_necessarios) || isNaN(gastos_pessoais_e_lazer) || isNaN(reserva)){
             alert("digite seu salario novamente");
         }else{
-            document.getElementById("gastos_necessarios").innerHTML = gastos_necessarios;
+            document.getElementById("gastos_necessarios").innerHTML = gastos_necessarios.toFixed(2);
 
-            document.getElementById("gastos_pessoais_e_lazer").innerHTML = gastos_pessoais_e_lazer;
+            document.getElementById("gastos_pessoais_e_lazer").innerHTML = gastos_pessoais_e_lazer.toFixed(2);
 
-            document.getElementById("reserva").innerHTML = reserva;
+            document.getElementById("reserva").innerHTML = reserva.toFixed(2);
         }
-        
         
     }
 }
